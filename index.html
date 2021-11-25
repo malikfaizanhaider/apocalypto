@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.6.0/custom-elements-es5-adapter.min.js'></script>
+    <script type="module">
+        // Take care of cases in which the browser runs this
+        // script before it has finished running
+        // webcomponents-loader.js (e.g. Firefox script execution order)
+        window.WebComponents = window.WebComponents || {
+            waitFor(cb){ addEventListener('WebComponentsReady', cb) }
+        }
+    </script>
+</head>
+<body>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/@i2cinc/components@1.0.1/packages/button/sp-button.js"></script>
+
+</body>
+</html>

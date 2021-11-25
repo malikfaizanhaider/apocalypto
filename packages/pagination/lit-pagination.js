@@ -1,10 +1,13 @@
 import { LitElement, html, css } from 'lit-element';
+
 import '@polymer/paper-button/paper-button';
 import '@polymer/paper-icon-button/paper-icon-button';
 import '@polymer/iron-iconset-svg';
+
 class LitPagination extends LitElement {
+
     static get styles() {
-        return css `
+        return css`
             :host {
                 display: block;
                 font-size: 14px;
@@ -30,6 +33,8 @@ class LitPagination extends LitElement {
                 margin: 0px 4px;
             }`;
     }
+
+
     static get properties() {
         return {
             /** Per-page limit of the elements. */
@@ -78,6 +83,7 @@ class LitPagination extends LitElement {
             }
         };
     }
+
     constructor() {
         super();
         this.limit = 2;
@@ -89,6 +95,7 @@ class LitPagination extends LitElement {
         this.hasNext = this.computeNext(this.page, this.pages);
         this.hasPages = this.computeHasPage(this.items.size, this.total);
     }
+
     set page(val) {
         const oldVal = this._page;
         this._page = val;
@@ -96,37 +103,46 @@ class LitPagination extends LitElement {
         this.onPageChange(this._page, oldVal);
         this.observePageCount(this._page, this.limit, this.total);
     }
+
     get page() {
         return this._page;
     }
+
     set limit(val) {
         const oldVal = this._limit;
         this._limit = val;
         this.requestUpdate('limit', oldVal);
         this.observePageCount(this.page, this._limit, this.total);
     }
+
     get limit() {
         return this._limit;
     }
+
     set total(val) {
         const oldVal = this._total;
         this._total = val;
         this.requestUpdate('total', oldVal);
         this.observePageCount(this.page, this.limit, this._total);
     }
+
     get total() {
         return this._total;
     }
+
     set size(val) {
         const oldVal = this._size;
         this._size = val;
         this.requestUpdate('size', oldVal);
+
     }
+
     get size() {
         return this._size;
     }
+
     render() {
-        return html `
+        return html`
             <iron-iconset-svg name='pagination-icons'>
                 <svg>
                     <defs>
@@ -161,7 +177,7 @@ class LitPagination extends LitElement {
                 <div style='display: flex; align-items: center;'>
                     <div style='padding-right: var(--i2c-space-l);'>
                         <span>Page</span>
-                        ${this.items.map(item => html `
+                        ${this.items.map(item => html`
                             <vaadin-button
                                 class='cm-button'
                                 theme='icon outline primary xs-small'
@@ -197,19 +213,25 @@ class LitPagination extends LitElement {
             </div>
         `;
     }
+
+
     computeBefore(page, pages) {
         return page > 1;
     }
+
     computeNext(page, pages) {
         return page < pages;
     }
+
     computeHasPage(itemsLength, total) {
         return itemsLength < total;
     }
+
     observePageCount(page, limit, total) {
         if (limit && total) {
             this.pages = parseInt(Math.ceil(parseFloat(total) / parseFloat(limit)));
         }
+
         if (page && limit && total) {
             const items = [];
             const firstIndex = this._firstIndex(page, this.size);
@@ -220,46 +242,55 @@ class LitPagination extends LitElement {
             this.items = items;
         }
     }
+
     onPageChange(newValue, oldValue) {
         this.dispatchEvent(new CustomEvent('page-change', { detail: { newPage: newValue, oldPage: oldValue } }));
     }
+
     _firstIndex(page, size) {
         const index = page - size;
         if (index < 1) {
             return 1;
-        }
-        else {
+        } else {
             return index;
         }
     }
+
     _lastIndex(page, size) {
         const index = parseInt(page) + parseInt(size);
         if (index > this.pages) {
             return this.pages;
-        }
-        else {
+        } else {
             return index;
         }
     }
+
     isCurrent(index, page) {
         return index == page;
     }
+
     onChange(item) {
         this.page = item;
         this.requestUpdate();
     }
+
     onBefore(event) {
         this.page = this.page > 0 ? this.page - 1 : 1;
     }
+
     onNext(event) {
         this.page = this.page < this.pages ? parseInt(this.page) + 1 : this.pages;
     }
+
     onBegin(event) {
         this.page = 1;
     }
+
     onEnd(event) {
         this.page = this.pages;
     }
+
+
 }
+
 customElements.define('lit-pagination', LitPagination);
-//# sourceMappingURL=lit-pagination.js.map

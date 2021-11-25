@@ -1,0 +1,134 @@
+/* Copyright 2021 i2c Inc. All rights reserved. */
+
+/* stylelint-disable */
+:host,
+:root {
+    --cm-global-color-status: Verified;
+    --cm-global-color-version: 5.1;
+    --cm-global-color-celery-400: #44b556;
+    --cm-global-color-celery-500: #4bc35f;
+    --cm-global-color-celery-600: #51d267;
+    --cm-global-color-celery-700: #58e06f;
+    --cm-global-color-chartreuse-400: #85d044;
+    --cm-global-color-chartreuse-500: #8ede49;
+    --cm-global-color-chartreuse-600: #9bec54;
+    --cm-global-color-chartreuse-700: #a3f858;
+    --cm-global-color-yellow-400: #dfbf00;
+    --cm-global-color-yellow-500: #edcc00;
+    --cm-global-color-yellow-600: #fad900;
+    --cm-global-color-yellow-700: #ffe22e;
+    --cm-global-color-magenta-400: #d83790;
+    --cm-global-color-magenta-500: #e2499d;
+    --cm-global-color-magenta-600: #ec5aaa;
+    --cm-global-color-magenta-700: #f56bb7;
+    --cm-global-color-fuchsia-400: #c038cc;
+    --cm-global-color-fuchsia-500: #cf3edc;
+    --cm-global-color-fuchsia-600: #d951e5;
+    --cm-global-color-fuchsia-700: #e366ef;
+    --cm-global-color-purple-400: #9256d9;
+    --cm-global-color-purple-500: #9d64e1;
+    --cm-global-color-purple-600: #a873e9;
+    --cm-global-color-purple-700: #b483f0;
+    --cm-global-color-indigo-400: #6767ec;
+    --cm-global-color-indigo-500: #7575f1;
+    --cm-global-color-indigo-600: #8282f6;
+    --cm-global-color-indigo-700: #9090fa;
+    --cm-global-color-seafoam-400: #1b959a;
+    --cm-global-color-seafoam-500: #20a3a8;
+    --cm-global-color-seafoam-600: #23b2b8;
+    --cm-global-color-seafoam-700: #26c0c7;
+    --cm-global-color-red-400: #e34850;
+    --cm-global-color-red-500: #ec5b62;
+    --cm-global-color-red-600: #f76d74;
+    --cm-global-color-red-700: #ff7b82;
+    --cm-global-color-orange-400: #e68619;
+    --cm-global-color-orange-500: #f29423;
+    --cm-global-color-orange-600: #f9a43f;
+    --cm-global-color-orange-700: #ffb55b;
+    --cm-global-color-green-400: #2d9d78;
+    --cm-global-color-green-500: #33ab84;
+    --cm-global-color-green-600: #39b990;
+    --cm-global-color-green-700: #3fc89c;
+    --cm-global-color-blue-400: #2680eb;
+    --cm-global-color-blue-500: #378ef0;
+    --cm-global-color-blue-600: #4b9cf5;
+    --cm-global-color-blue-700: #5aa9fa;
+    --cm-global-color-gray-50: #252525;
+    --cm-global-color-gray-75: #2f2f2f;
+    --cm-global-color-gray-100: #323232;
+    --cm-global-color-gray-200: #3e3e3e;
+    --cm-global-color-gray-300: #4a4a4a;
+    --cm-global-color-gray-400: #5a5a5a;
+    --cm-global-color-gray-500: #6e6e6e;
+    --cm-global-color-gray-600: #909090;
+    --cm-global-color-gray-700: #b9b9b9;
+    --cm-global-color-gray-800: #e3e3e3;
+    --cm-global-color-gray-900: #fff;
+    --cm-alias-background-color-primary: var(
+        --cm-global-color-gray-100
+    );
+    --cm-alias-background-color-secondary: var(
+        --cm-global-color-gray-75
+    );
+    --cm-alias-background-color-tertiary: var(
+        --cm-global-color-gray-50
+    );
+    --cm-alias-background-color-modal-overlay: rgba(0, 0, 0, 0.5);
+    --cm-alias-dropshadow-color: rgba(0, 0, 0, 0.5);
+    --cm-alias-background-color-hover-overlay: hsla(0, 0%, 100%, 0.06);
+    --cm-alias-highlight-hover: hsla(0, 0%, 100%, 0.07);
+    --cm-alias-highlight-active: hsla(0, 0%, 100%, 0.1);
+    --cm-alias-highlight-selected: rgba(55, 142, 240, 0.15);
+    --cm-alias-highlight-selected-hover: rgba(55, 142, 240, 0.25);
+    --cm-alias-text-highlight-color: rgba(55, 142, 240, 0.25);
+    --cm-alias-background-color-quickactions: rgba(50, 50, 50, 0.9);
+    --cm-alias-border-color-selected: var(
+        --cm-global-color-blue-600
+    );
+    --cm-alias-radial-reaction-color-default: hsla(0, 0%, 89%, 0.6);
+    --cm-alias-pasteboard-background-color: var(
+        --cm-global-color-gray-50
+    );
+    --cm-alias-appframe-border-color: var(
+        --cm-global-color-gray-50
+    );
+    --cm-alias-appframe-separator-color: var(
+        --cm-global-color-gray-50
+    );
+    --cm-miller-column-item-background-color-selected: rgba(
+        55,
+        142,
+        240,
+        0.1
+    );
+    --cm-miller-column-item-background-color-selected-hover: rgba(
+        55,
+        142,
+        240,
+        0.2
+    );
+    --cm-well-background-color: hsla(0, 0%, 89%, 0.02);
+    --cm-colorarea-border-color: hsla(0, 0%, 100%, 0.1);
+    --cm-colorarea-border-color-hover: hsla(0, 0%, 100%, 0.1);
+    --cm-colorarea-border-color-down: hsla(0, 0%, 100%, 0.1);
+    --cm-colorarea-border-color-key-focus: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-border-color: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-border-color-hover: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-border-color-down: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-border-color-key-focus: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-vertical-border-color: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-vertical-border-color-hover: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-vertical-border-color-down: hsla(0, 0%, 100%, 0.1);
+    --cm-colorslider-vertical-border-color-key-focus: hsla(
+        0,
+        0%,
+        100%,
+        0.1
+    );
+    --cm-colorwheel-border-color: hsla(0, 0%, 100%, 0.1);
+    --cm-colorwheel-border-color-hover: hsla(0, 0%, 100%, 0.1);
+    --cm-colorwheel-border-color-down: hsla(0, 0%, 100%, 0.1);
+    --cm-colorwheel-border-color-key-focus: hsla(0, 0%, 100%, 0.1);
+    --cm-well-border-color: hsla(0, 0%, 100%, 0.05);
+}
+/* stylelint-enable */

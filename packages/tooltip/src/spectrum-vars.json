@@ -1,0 +1,23 @@
+{
+  "custom-properties": {
+    "--cm-picker-m-popover-offset-y": "var(--cm-global-dimension-size-75)",
+    "--cm-tooltip-tip-height": "var(--cm-global-dimension-size-50)",
+    "--cm-tooltip-padding-top": "var(--cm-global-dimension-size-50)",
+    "--cm-tooltip-padding-x": "var(--cm-global-dimension-size-125)",
+    "--cm-tooltip-border-radius": "var(--cm-global-dimension-size-50)",
+    "--cm-tooltip-min-height": "var(--cm-global-dimension-size-300)",
+    "--cm-tooltip-max-width": "var(--cm-global-dimension-size-2000)",
+    "--cm-tooltip-text-size": "var(--cm-global-dimension-font-size-75)",
+    "--cm-tooltip-text-font-weight": "var(--cm-global-font-weight-regular)",
+    "--cm-tooltip-text-line-height": "var(--cm-alias-component-text-line-height)",
+    "--cm-tooltip-tip-width": "var(--cm-global-dimension-size-100)",
+    "--cm-tooltip-icon-margin-x": "var(--cm-global-dimension-size-100)",
+    "--cm-tooltip-icon-size": "var(--cm-global-dimension-size-175)",
+    "--cm-tooltip-tip-margin": "var(--cm-global-dimension-size-50)",
+    "--cm-tooltip-background-color": "var(--cm-global-color-static-gray-700)",
+    "--cm-tooltip-text-color": "var(--cm-global-color-static-white)",
+    "--cm-tooltip-negative-background-color": "var(--cm-global-color-static-red-700)",
+    "--cm-tooltip-info-background-color": "var(--cm-global-color-static-blue-700)",
+    "--cm-tooltip-positive-background-color": "var(--cm-global-color-static-green-700)"
+  }
+}

@@ -1,9 +1,22 @@
-/* Copyright 2021 i2c Inc. All rights reserved. */
 import { __decorate } from "tslib";
-import { SpectrumElement, property, } from '../../base/src/index.js';
+/*
+Copyright 2020 Adobe. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
+import { SpectrumElement, property, } from '@spectrum-web-components/base';
 import { FocusVisiblePolyfillMixin } from './focus-visible.js';
 /**
  * Focusable base class handles tabindex setting into shadowed elements automatically.
+ *
+ * This implementation is based heavily on the aybolit delegate-focus-mixin at
+ * https://github.com/web-padawan/aybolit/blob/master/packages/core/src/mixins/delegate-focus-mixin.js
  */
 export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
     constructor() {
@@ -65,14 +78,8 @@ export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
             }
             return;
         }
-        if (tabIndex === -1) {
-            this.addEventListener('pointerdown', this.onPointerdownManagementOfTabIndex);
-        }
-        else {
-            // All code paths are about to address the host tabindex without side effect.
-            this.manipulatingTabindex = true;
-            this.removeEventListener('pointerdown', this.onPointerdownManagementOfTabIndex);
-        }
+        // All code paths are about to address the host tabindex without side effect.
+        this.manipulatingTabindex = true;
         if (tabIndex === -1 || this.disabled) {
             // Do not cange the tabindex of `focusElement` as it is the "old" value cache.
             // Make element NOT focusable.
@@ -95,12 +102,6 @@ export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
         }
         this.manageFocusElementTabindex(tabIndex);
     }
-    onPointerdownManagementOfTabIndex() {
-        if (this.tabIndex === -1) {
-            this.tabIndex = 0;
-            this.focus({ preventScroll: true });
-        }
-    }
     async manageFocusElementTabindex(tabIndex) {
         if (!this.focusElement) {
             // allow setting these values to be async when needed.
@@ -119,15 +120,15 @@ export class Focusable extends FocusVisiblePolyfillMixin(SpectrumElement) {
     get focusElement() {
         throw new Error('Must implement focusElement getter!');
     }
-    focus(options) {
+    focus() {
         if (this.disabled || !this.focusElement) {
             return;
         }
         if (this.focusElement !== this) {
-            this.focusElement.focus(options);
+            this.focusElement.focus();
         }
         else {
-            HTMLElement.prototype.focus.apply(this, [options]);
+            HTMLElement.prototype.focus.apply(this);
         }
     }
     blur() {

@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "baseUrl": "./packages",
+        "target": "es2019",
+        "allowJs": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "lib": [
+            "es2019",
+            "dom",
+            "dom.iterable"
+        ],
+        "strict": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "outDir": "out-tsc",
+        "sourceMap": true,
+        "inlineSources": true,
+        "types": [
+            "chai",
+            "sinon",
+            "webpack-env",
+            "node"
+        ]
+    },
+    "include": [
+        "**/*.ts"
+    ]
+}

@@ -1,3 +1,4 @@
-import { DialogWrapper } from './src/DialogWrapper.js';
-customElements.define('cm-dialog-wrapper', DialogWrapper);
-//# sourceMappingURL=sp-dialog-wrapper.js.map
+"use strict";
+exports.__esModule = true;
+var DialogWrapper_js_1 = require("./src/DialogWrapper.js");
+customElements.define('cm-dialog-wrapper', DialogWrapper_js_1.DialogWrapper);

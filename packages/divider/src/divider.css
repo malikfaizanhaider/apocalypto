@@ -1,0 +1,12 @@
+/* Copyright 2021 i2c Inc. All rights reserved. */
+
+@import './spectrum-divider.css';
+
+:host {
+    display: block;
+}
+
+hr {
+    border: none;
+    margin: 0;
+}

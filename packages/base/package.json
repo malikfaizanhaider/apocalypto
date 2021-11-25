@@ -1,0 +1,52 @@
+{
+    "name": "@spectrum-web-components/base",
+    "version": "0.4.3",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adobe/spectrum-web-components.git",
+        "directory": "packages/base"
+    },
+    "author": "",
+    "homepage": "https://adobe.github.io/spectrum-web-components/components/base",
+    "bugs": {
+        "url": "https://github.com/adobe/spectrum-web-components/issues"
+    },
+    "main": "./src/index.js",
+    "module": "./src/index.js",
+    "type": "module",
+    "exports": {
+        ".": "./src/index.js",
+        "./src/*": "./src/*",
+        "./streaming-listener": "./src/streaming-listener.js",
+        "./streaming-listener.js": "./src/streaming-listener.js",
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "test": "karma start --coverage"
+    },
+    "files": [
+        "*.d.ts",
+        "*.js",
+        "*.js.map",
+        "/src/",
+        "custom-elements.json"
+    ],
+    "keywords": [
+        "spectrum css",
+        "web components",
+        "lit-element",
+        "lit-html"
+    ],
+    "dependencies": {
+        "lit-element": "^2.4.0",
+        "lit-html": "^1.0.0",
+        "tslib": "^2.0.0"
+    },
+    "types": "./src/index.d.ts",
+    "sideEffects": false
+}

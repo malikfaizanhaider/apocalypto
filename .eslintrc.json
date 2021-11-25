@@ -1,0 +1,38 @@
+{
+    "root": true,
+    "plugins": ["notice", "i2c-web-components", "import"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "rules": {
+        "import/extensions": ["error", "ignorePackages", { "ts": "never" }],
+        "import/prefer-default-export": "off",
+        "spectrum-web-components/prevent-argument-names": [
+            "error",
+            ["e", "ev", "evt", "err"]
+        ],
+        "lit-a11y/click-events-have-key-events": [
+            "error",
+            {
+                "allowList": [
+                    "cm-button",
+                    "cm-action-button",
+                    "cm-checkbox",
+                    "cm-radio",
+                    "cm-switch",
+                    "cm-menu-item",
+                    "cm-clear-button",
+                    "cm-underlay"
+                ]
+            }
+        ]
+    },
+    "extends": ["plugin:prettier/recommended", "plugin:lit-a11y/recommended"]
+}

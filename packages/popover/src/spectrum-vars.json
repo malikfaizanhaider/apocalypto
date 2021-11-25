@@ -1,0 +1,12 @@
+{
+  "custom-properties": {
+    "--cm-picker-m-popover-offset-y": "var(--cm-global-dimension-size-75)",
+    "--cm-popover-min-width": "var(--cm-global-dimension-size-400)",
+    "--cm-popover-min-height": "var(--cm-global-dimension-size-400)",
+    "--cm-popover-border-size": "var(--cm-alias-border-size-thin)",
+    "--cm-popover-border-radius": "var(--cm-alias-border-radius-regular)",
+    "--cm-popover-background-color": "var(--cm-global-color-gray-50)",
+    "--cm-popover-border-color": "var(--cm-alias-border-color-dark)",
+    "--cm-popover-shadow-color": "var(--cm-alias-dropshadow-color)"
+  }
+}

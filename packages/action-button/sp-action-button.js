@@ -1,3 +1,4 @@
-import { ActionButton } from './src/ActionButton.js';
-customElements.define('cm-action-button', ActionButton);
-//# sourceMappingURL=sp-action-button.js.map
+"use strict";
+exports.__esModule = true;
+var ActionButton_js_1 = require("./src/ActionButton.js");
+customElements.define('cm-action-button', ActionButton_js_1.ActionButton);

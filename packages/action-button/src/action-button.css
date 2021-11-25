@@ -1,0 +1,95 @@
+/* Copyright 2021 i2c Inc. All rights reserved. */
+
+@import './spectrum-action-button.css';
+
+:host {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+:host([disabled]) {
+    pointer-events: none;
+    cursor: auto;
+}
+
+:host([dir]) {
+    /* spectrum-css uses "-webkit-appearance: button" to workaround an
+     * iOS and Safari issue. However, it results in incorrect styling
+     * when applied in :host
+     */
+    -webkit-appearance: none;
+}
+
+::slotted([slot='icon']) {
+    flex-shrink: 0;
+}
+
+#button {
+    position: absolute;
+    inset: 0;
+}
+
+#label {
+    flex-grow: var(--cm-actionbutton-label-flex-grow);
+    text-align: var(--cm-actionbutton-label-text-align);
+}
+
+:host([size='s']) {
+    --cm-icon-tshirt-size-height: var(
+        --cm-alias-workflow-icon-size-s
+    );
+    --cm-icon-tshirt-size-width: var(
+        --cm-alias-workflow-icon-size-s
+    );
+    --cm-ui-icon-tshirt-size-height: var(
+        --cm-alias-ui-icon-cornertriangle-size-75
+    );
+    --cm-ui-icon-tshirt-size-width: var(
+        --cm-alias-ui-icon-cornertriangle-size-75
+    );
+}
+
+:host([size='m']) {
+    --cm-icon-tshirt-size-height: var(
+        --cm-alias-workflow-icon-size-m
+    );
+    --cm-icon-tshirt-size-width: var(
+        --cm-alias-workflow-icon-size-m
+    );
+    --cm-ui-icon-tshirt-size-height: var(
+        --cm-alias-ui-icon-cornertriangle-size-100
+    );
+    --cm-ui-icon-tshirt-size-width: var(
+        --cm-alias-ui-icon-cornertriangle-size-100
+    );
+}
+
+:host([size='l']) {
+    --cm-icon-tshirt-size-height: var(
+        --cm-alias-workflow-icon-size-l
+    );
+    --cm-icon-tshirt-size-width: var(
+        --cm-alias-workflow-icon-size-l
+    );
+    --cm-ui-icon-tshirt-size-height: var(
+        --cm-alias-ui-icon-cornertriangle-size-200
+    );
+    --cm-ui-icon-tshirt-size-width: var(
+        --cm-alias-ui-icon-cornertriangle-size-200
+    );
+}
+
+:host([size='xl']) {
+    --cm-icon-tshirt-size-height: var(
+        --cm-alias-workflow-icon-size-xl
+    );
+    --cm-icon-tshirt-size-width: var(
+        --cm-alias-workflow-icon-size-xl
+    );
+    --cm-ui-icon-tshirt-size-height: var(
+        --cm-alias-ui-icon-cornertriangle-size-300
+    );
+    --cm-ui-icon-tshirt-size-width: var(
+        --cm-alias-ui-icon-cornertriangle-size-300
+    );
+}

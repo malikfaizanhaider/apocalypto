@@ -1,5 +1,16 @@
+/*
+Copyright 2020 Adobe. All rights reserved.
+This file is licensed to you under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License. You may obtain a copy
+of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, either express or implied. See the License for the specific language
+governing permissions and limitations under the License.
+*/
 import { __decorate } from "tslib";
-import { html, SpectrumElement, property, query, } from '../../base/src/index';
+import { html, SpectrumElement, property, query, } from '@spectrum-web-components/base';
 import tooltipStyles from './tooltip.css.js';
 /**
  * @slot icon - The icon that appears on the left of the label
@@ -8,7 +19,7 @@ import tooltipStyles from './tooltip.css.js';
 export class Tooltip extends SpectrumElement {
     constructor() {
         super();
-        this._tooltipId = `cm-tooltip-describedby-helper-${Tooltip.instanceCount++}`;
+        this._tooltipId = `sp-tooltip-describedby-helper-${Tooltip.instanceCount++}`;
         this.open = false;
         /**
          * @type {"auto" | "auto-start" | "auto-end" | "top" | "bottom" | "right" | "left" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "right-start" | "right-end" | "left-start" | "left-end" | "none"}

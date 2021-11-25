@@ -1,9 +1,10 @@
 import '@vaadin/vaadin-lumo-styles/typography.js';
 import '@vaadin/vaadin-lumo-styles/style.js';
 import '@vaadin/vaadin-lumo-styles/mixins/field-button.js';
-import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+
 const $_documentContainer = // eslint-disable-line camelcase
- html `
+html`
   <dom-module id="lumo-multiselect-combo-box-input" theme-for="multiselect-combo-box-input">
     <template>
       <style include="lumo-field-button">
@@ -102,5 +103,5 @@ const $_documentContainer = // eslint-disable-line camelcase
     </template>
   </dom-module>
 `;
+
 document.head.appendChild($_documentContainer.content);
-//# sourceMappingURL=multiselect-combo-box-input-styles.js.map

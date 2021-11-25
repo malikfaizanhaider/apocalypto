@@ -1,59 +1,10 @@
-import { css } from '../../base/src/index';
-const styles = css `
-    :host {
-        --cm-buttongroup-button-gap-reset: 0;
-        display: flex;
-    }
-
-    ::slotted(*) {
-        flex-shrink: 0;
-    }
-
-    :host([dir='ltr']) ::slotted(:not(:first-of-type)) {
-        margin-left: var(
-            --cm-buttongroup-button-gap-x,
-            var(--cm-global-dimension-static-size-200)
-        );
-    }
-
-    :host([dir='rtl']) ::slotted(:not(:first-of-type)) {
-        margin-right: var(
-            --cm-buttongroup-button-gap-x,
-            var(--cm-global-dimension-static-size-200)
-        );
-    }
-
-    :host([vertical]) {
-        display: inline-flex;
-        flex-direction: column;
-    }
-
-    :host([dir='ltr'][vertical]) ::slotted(:not(:first-of-type)) {
-        margin-left: var(--cm-buttongroup-button-gap-reset);
-    }
-
-    :host([dir='rtl'][vertical]) ::slotted(:not(:first-of-type)) {
-        margin-right: var(--cm-buttongroup-button-gap-reset);
-    }
-
-    :host([vertical]) ::slotted(:not(:first-of-type)) {
-        margin-top: var(
-            --cm-buttongroup-button-gap-y,
-            var(--cm-global-dimension-static-size-200)
-        );
-    }
-
-    :host([vertical]) ::slotted(cm-action-button) {
-        --cm-actionbutton-label-flex-grow: 1;
-    }
-
-    :host([dir='ltr'][vertical]) ::slotted(cm-action-button) {
-        --cm-actionbutton-label-text-align: left;
-    }
-
-    :host([dir='rtl'][vertical]) ::slotted(cm-action-button) {
-        --cm-actionbutton-label-text-align: right;
-    }
-`;
-export default styles;
-//# sourceMappingURL=button-group.css.js.map
+"use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+exports.__esModule = true;
+var index_1 = require("../../base/src/index");
+var styles = index_1.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    :host {\n        --cm-buttongroup-button-gap-reset: 0;\n        display: flex\n    }\n\n    ::slotted(*) {\n        flex-shrink: 0\n    }\n\n    :host([dir=ltr]) ::slotted(:not(:first-of-type)) {\n        margin-left: var(--cm-buttongroup-button-gap-x, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([dir=rtl]) ::slotted(:not(:first-of-type)) {\n        margin-right: var(--cm-buttongroup-button-gap-x, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([vertical]) {\n        display: inline-flex;\n        flex-direction: column\n    }\n\n    :host([dir=ltr][vertical]) ::slotted(:not(:first-of-type)) {\n        margin-left: var(--cm-buttongroup-button-gap-reset)\n    }\n\n    :host([dir=rtl][vertical]) ::slotted(:not(:first-of-type)) {\n        margin-right: var(--cm-buttongroup-button-gap-reset)\n    }\n\n    :host([vertical]) ::slotted(:not(:first-of-type)) {\n        margin-top: var(--cm-buttongroup-button-gap-y, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-flex-grow: 1\n    }\n\n    :host([dir=ltr][vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-text-align: left\n    }\n\n    :host([dir=rtl][vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-text-align: right\n    }\n"], ["\n    :host {\n        --cm-buttongroup-button-gap-reset: 0;\n        display: flex\n    }\n\n    ::slotted(*) {\n        flex-shrink: 0\n    }\n\n    :host([dir=ltr]) ::slotted(:not(:first-of-type)) {\n        margin-left: var(--cm-buttongroup-button-gap-x, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([dir=rtl]) ::slotted(:not(:first-of-type)) {\n        margin-right: var(--cm-buttongroup-button-gap-x, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([vertical]) {\n        display: inline-flex;\n        flex-direction: column\n    }\n\n    :host([dir=ltr][vertical]) ::slotted(:not(:first-of-type)) {\n        margin-left: var(--cm-buttongroup-button-gap-reset)\n    }\n\n    :host([dir=rtl][vertical]) ::slotted(:not(:first-of-type)) {\n        margin-right: var(--cm-buttongroup-button-gap-reset)\n    }\n\n    :host([vertical]) ::slotted(:not(:first-of-type)) {\n        margin-top: var(--cm-buttongroup-button-gap-y, var(--cm-global-dimension-static-size-200))\n    }\n\n    :host([vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-flex-grow: 1\n    }\n\n    :host([dir=ltr][vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-text-align: left\n    }\n\n    :host([dir=rtl][vertical]) ::slotted(sp-action-button) {\n        --cm-actionbutton-label-text-align: right\n    }\n"])));
+exports["default"] = styles;
+var templateObject_1;

@@ -1,0 +1,145 @@
+/* Copyright 2021 i2c Inc. All rights reserved. */
+.spectrum-Heading--sizeXXXL {
+    /* .spectrum-Typography .spectrum-Heading--sizeXXXL */
+    margin-top: var(
+        --cm-heading-xxxl-margin-top,
+        var(--cm-alias-heading-xxxl-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-xxxl-margin-bottom,
+        var(--cm-global-dimension-size-130)
+    );
+}
+.spectrum-Heading--sizeXXL {
+    /* .spectrum-Typography .spectrum-Heading--sizeXXL */
+    margin-top: var(
+        --cm-heading-xxl-margin-top,
+        var(--cm-alias-heading-xxl-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-xxl-margin-bottom,
+        var(--cm-global-dimension-size-125)
+    );
+}
+.spectrum-Heading--sizeXL {
+    /* .spectrum-Typography .spectrum-Heading--sizeXL */
+    margin-top: var(
+        --cm-heading-xl-margin-top,
+        var(--cm-alias-heading-xl-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-xl-margin-bottom,
+        var(--cm-global-dimension-size-115)
+    );
+}
+.spectrum-Heading--sizeL {
+    /* .spectrum-Typography .spectrum-Heading--sizeL */
+    margin-top: var(
+        --cm-heading-l-margin-top,
+        var(--cm-alias-heading-l-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-l-margin-bottom,
+        var(--cm-global-dimension-size-85)
+    );
+}
+.spectrum-Heading--sizeM {
+    /* .spectrum-Typography .spectrum-Heading--sizeM */
+    margin-top: var(
+        --cm-heading-m-margin-top,
+        var(--cm-alias-heading-m-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-m-margin-bottom,
+        var(--cm-global-dimension-size-75)
+    );
+}
+.spectrum-Heading--sizeS {
+    /* .spectrum-Typography .spectrum-Heading--sizeS */
+    margin-top: var(
+        --cm-heading-s-margin-top,
+        var(--cm-alias-heading-s-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-s-margin-bottom,
+        var(--cm-global-dimension-size-65)
+    );
+}
+.spectrum-Heading--sizeXS {
+    /* .spectrum-Typography .spectrum-Heading--sizeXS */
+    margin-top: var(
+        --cm-heading-xs-margin-top,
+        var(--cm-alias-heading-xs-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-xs-margin-bottom,
+        var(--cm-global-dimension-size-50)
+    );
+}
+.spectrum-Heading--sizeXXS {
+    /* .spectrum-Typography .spectrum-Heading--sizeXXS */
+    margin-top: var(
+        --cm-heading-xxs-margin-top,
+        var(--cm-alias-heading-xxs-margin-top)
+    );
+    margin-bottom: var(
+        --cm-heading-xxs-margin-bottom,
+        var(--cm-global-dimension-size-40)
+    );
+}
+.spectrum-Body--sizeXXXL {
+    /* .spectrum-Typography .spectrum-Body--sizeXXXL */
+    margin-top: var(--cm-body-xxxl-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-xxxl-margin-bottom,
+        var(--cm-global-dimension-size-400)
+    );
+}
+.spectrum-Body--sizeXXL {
+    /* .spectrum-Typography .spectrum-Body--sizeXXL */
+    margin-top: var(--cm-body-xxl-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-xxl-margin-bottom,
+        var(--cm-global-dimension-size-300)
+    );
+}
+.spectrum-Body--sizeXL {
+    /* .spectrum-Typography .spectrum-Body--sizeXL */
+    margin-top: var(--cm-body-xl-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-xl-margin-bottom,
+        var(--cm-global-dimension-size-200)
+    );
+}
+.spectrum-Body--sizeL {
+    /* .spectrum-Typography .spectrum-Body--sizeL */
+    margin-top: var(--cm-body-l-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-l-margin-bottom,
+        var(--cm-global-dimension-size-160)
+    );
+}
+.spectrum-Body--sizeM {
+    /* .spectrum-Typography .spectrum-Body--sizeM */
+    margin-top: var(--cm-body-m-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-m-margin-bottom,
+        var(--cm-global-dimension-size-150)
+    );
+}
+.spectrum-Body--sizeS {
+    /* .spectrum-Typography .spectrum-Body--sizeS */
+    margin-top: var(--cm-body-s-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-s-margin-bottom,
+        var(--cm-global-dimension-size-125)
+    );
+}
+.spectrum-Body--sizeXS {
+    /* .spectrum-Typography .spectrum-Body--sizeXS */
+    margin-top: var(--cm-body-xs-margin-top, 0);
+    margin-bottom: var(
+        --cm-body-xs-margin-bottom,
+        var(--cm-global-dimension-size-115)
+    );
+}

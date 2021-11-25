@@ -1,0 +1,74 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": false,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "notice", "spectrum-web-components"],
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier",
+        "plugin:lit-a11y/recommended"
+    ],
+    "rules": {
+        "spectrum-web-components/prevent-argument-names": [
+            "error",
+            ["e", "ev", "evt", "err"]
+        ],
+        "spectrum-web-components/document-active-element": ["error"],
+        "@typescript-eslint/explicit-function-return-type": [
+            1,
+            {
+                "allowExpressions": true
+            }
+        ],
+        "lit-a11y/click-events-have-key-events": [
+            "error",
+            {
+                "allowList": [
+                    "sp-button",
+                    "sp-action-button",
+                    "sp-checkbox",
+                    "sp-radio",
+                    "sp-switch",
+                    "sp-menu-item",
+                    "sp-clear-button",
+                    "sp-underlay"
+                ]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["*.test.ts", "*.stories.ts", "**/benchmark/*.ts"],
+            "rules": {
+                "spectrum-web-components/document-active-element": ["off"],
+                "lit-a11y/no-autofocus": ["off"],
+                "lit-a11y/tabindex-no-positive": ["off"]
+            }
+        },
+        {
+            "files": ["Picker.ts", "SplitButton.ts"],
+            "rules": {
+                "lit-a11y/click-events-have-key-events": [
+                    "error",
+                    {
+                        "allowList": [
+                            "sp-button",
+                            "sp-action-button",
+                            "sp-checkbox",
+                            "sp-radio",
+                            "sp-switch",
+                            "sp-menu-item",
+                            "sp-clear-button",
+                            "sp-underlay",
+                            "sp-popover"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

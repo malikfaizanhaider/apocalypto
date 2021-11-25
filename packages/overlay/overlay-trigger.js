@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 /*
 Copyright 2020 Adobe. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -9,6 +11,5 @@ the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTA
 OF ANY KIND, either express or implied. See the License for the specific language
 governing permissions and limitations under the License.
 */
-import { OverlayTrigger } from './src/OverlayTrigger.js';
-customElements.define('overlay-trigger', OverlayTrigger);
-//# sourceMappingURL=overlay-trigger.js.map
+var OverlayTrigger_js_1 = require("./src/OverlayTrigger.js");
+customElements.define('overlay-trigger', OverlayTrigger_js_1.OverlayTrigger);

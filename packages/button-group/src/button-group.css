@@ -1,0 +1,15 @@
+/* Copyright 2021 i2c Inc. All rights reserved. */
+
+@import './spectrum-button-group.css';
+
+:host([vertical]) ::slotted(cm-action-button) {
+    --cm-actionbutton-label-flex-grow: 1;
+}
+
+:host([dir='ltr'][vertical]) ::slotted(cm-action-button) {
+    --cm-actionbutton-label-text-align: left;
+}
+
+:host([dir='rtl'][vertical]) ::slotted(cm-action-button) {
+    --cm-actionbutton-label-text-align: right;
+}

@@ -1,0 +1,6 @@
+{
+  "custom-properties": {
+    "--cm-buttongroup-button-gap-x": "var(--cm-global-dimension-static-size-200)",
+    "--cm-buttongroup-button-gap-y": "var(--cm-global-dimension-static-size-200)"
+  }
+}

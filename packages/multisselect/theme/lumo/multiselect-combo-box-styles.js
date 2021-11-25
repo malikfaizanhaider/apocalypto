@@ -1,8 +1,9 @@
 import '@vaadin/vaadin-lumo-styles/font-icons.js';
 import '@vaadin/vaadin-lumo-styles/mixins/required-field.js';
-import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+import {html} from '@polymer/polymer/lib/utils/html-tag.js';
+
 const $_documentContainer = // eslint-disable-line camelcase
- html `
+html`
   <dom-module id="lumo-multiselect-combo-box" theme-for="multiselect-combo-box">
     <template>
       <style include="lumo-required-field">
@@ -154,5 +155,5 @@ const $_documentContainer = // eslint-disable-line camelcase
     </template>
   </dom-module>
 `;
+
 document.head.appendChild($_documentContainer.content);
-//# sourceMappingURL=multiselect-combo-box-styles.js.map
