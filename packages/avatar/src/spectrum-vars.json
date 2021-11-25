@@ -1,9 +1,0 @@
-{
-  "custom-properties": {
-    "--cm-avatar-size-50-width": "var(--cm-alias-avatar-size-50)",
-    "--cm-avatar-size-50-height": "var(--cm-alias-avatar-size-50)",
-    "--cm-avatar-size-50-border-radius": "50%",
-    "--cm-avatar-size-100-opacity": "1",
-    "--cm-avatar-size-100-opacity-disabled": "0.3"
-  }
-}

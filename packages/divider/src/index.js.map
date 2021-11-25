@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/packages/divider/src/index.ts"],"names":[],"mappings":"AAAA,kDAAkD;AAElD,cAAc,cAAc,CAAC","sourcesContent":["/* Copyright 2021 i2c Inc. All rights reserved. */\r\n\r\nexport * from './Divider.js';\r\n"]}

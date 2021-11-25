@@ -1,8 +1,0 @@
-{
-  "custom-properties": {
-    "--cm-actiongroup-button-gap-y": "var(--cm-global-dimension-size-100)",
-    "--cm-actiongroup-button-gap-x": "var(--cm-global-dimension-size-100)",
-    "--cm-actionbutton-m-border-radius": "var(--cm-alias-border-radius-regular)",
-    "--cm-actionbutton-m-border-size": "var(--cm-alias-border-size-thin)"
-  }
-}
