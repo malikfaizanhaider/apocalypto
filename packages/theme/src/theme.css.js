@@ -1,5 +1,5 @@
 /* Copyright 2021 i2c Inc. All rights reserved. */
-import { css } from '../../base/src/index';
+import { css } from 'lit-element';
 const styles = css `
     :host,
     :root {

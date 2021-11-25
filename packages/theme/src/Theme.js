@@ -1,5 +1,5 @@
 /* Copyright 2021 i2c Inc. All rights reserved. */
-import { supportsAdoptingStyleSheets } from '../../base/src/index';
+import { supportsAdoptingStyleSheets } from 'lit-element';
 import coreStyles from './theme.css.js';
 const ScaleValues = ['medium', 'large'];
 const ColorValues = ['light', 'lightest', 'dark', 'darkest'];

@@ -15,8 +15,9 @@
     "url": "https://github.com/malikfaizanhaider/apocalypto/issues"
   },
   "homepage": "https://github.com/malikfaizanhaider/apocalypto#readme",
-  "description": "",
   "dependencies": {
     "@vaadin/vaadin": "^21.0.7"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
