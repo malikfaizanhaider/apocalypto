@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../../src/packages/dialog/src/index.ts"],"names":[],"mappings":"AAAA,kDAAkD;AAClD,cAAc,aAAa,CAAC;AAC5B,cAAc,oBAAoB,CAAC","sourcesContent":["/* Copyright 2021 i2c Inc. All rights reserved. */\r\nexport * from './Dialog.js';\r\nexport * from './DialogWrapper.js';\r\n"]}
