@@ -116,12 +116,12 @@ const styles = css `
     :host {
         background-color: var(--cm-popover-background-color, var(--cm-global-color-gray-50));
         border-color: transparent;
-        box-shadow: 0 0 0 1px var(--lumo-shade-5pct), var(--lumo-box-shadow-m);
+        box-shadow: 0 0 0 1px var(--i2c-shade-5pct), var(--i2c-box-shadow-m);
         will-change: filter;
         -webkit-clip-path: inset(-30px -30px);
         clip-path: inset(-30px -30px)
     }
-
+    
     #tip .triangle {
         fill: var(--cm-popover-background-color, var(--cm-global-color-gray-50));
         stroke: var(--cm-popover-border-color, var(--cm-alias-border-color-dark))
