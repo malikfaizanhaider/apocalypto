@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<cm-theme color='light' scale='large'>
+<cm-theme color='light' scale='medium'>
     <section class='row offset-1 tall'>
         <div>
             <cm-action-group>
@@ -16,6 +16,11 @@
                 <cm-action-button size="m" selected>Selected</cm-action-button>
                 <cm-action-button size="m" disabled>Disabled</cm-action-button>
             </cm-action-group>
+            <br>
+            <br>
+            <cm-action-button>
+                <iron-icon slot="icon" icon='vaadin:pencil'></iron-icon> This is an action button
+            </cm-action-button>
             <br>
             <br>
             <cm-button variant='cta' size='s' dir='ltr' focusable='' tabindex='0' role='button'>
@@ -47,6 +52,52 @@
             <cm-button variant='negative' theme='light'>Danger</cm-button>
             <br>
             <br>
+            <cm-action-button variant='cta' toggles>Toggle button</cm-action-button>
+            <br>
+            <br>
+            <div>
+                <div>
+                    <vaadin-button class='cm-button' theme='icon rounded primary' aria-label='Delete item'>
+                        <iron-icon icon='vaadin:pencil'></iron-icon>
+                    </vaadin-button>
+                    </vaadin-button>
+                    <vaadin-button class='cm-button' theme='icon rounded primary outline'
+                                   aria-label='Delete item'>
+                        <iron-icon icon='vaadin:inbox'></iron-icon>
+                    </vaadin-button>
+                    <vaadin-button class='cm-button' theme='icon primary' aria-label='Delete item'>
+                        <iron-icon icon='vaadin:vaadin:wrench'></iron-icon>
+                    </vaadin-button>
+                    <vaadin-button class='cm-button' theme='icon primary outline' aria-label='Delete item'>
+                        <iron-icon icon='vaadin:plug'></iron-icon>
+                    </vaadin-button>
+                </div>
+
+                <vaadin-button class='cm-button' theme='icon rounded' aria-label='Delete item'>
+                    <iron-icon style='margin: 0; padding: 0' icon='vaadin:chevron-down-small'></iron-icon>
+                </vaadin-button>
+                <vaadin-button class='cm-button' theme='icon rounded small' aria-label='Delete item'>
+                    <iron-icon style='margin: 0; padding: 0' icon='vaadin:chevron-down-small'></iron-icon>
+                </vaadin-button>
+                <vaadin-button style='cursor:pointer;' class='cm-button'
+                               theme='icon  rounded xxs-small' slot='trigger'
+                               label='bottom test' dir='ltr' variant='cta' focusable='' tabindex='0'
+                               role='button' aria-label='bottom test'>
+                    <iron-icon style='margin: 0; padding: 0' icon='vaadin:chevron-down-small'></iron-icon>
+                </vaadin-button>
+            </div>
+            <div>
+                <vaadin-button class='cm-button' theme='primary'>
+                    <iron-icon icon='vaadin:pencil'></iron-icon>
+                    Download
+                </vaadin-button>
+                <vaadin-button class='cm-button'>Secondary</vaadin-button>
+                <vaadin-button class='cm-button' theme='primary outline'>Primary Outline</vaadin-button>
+                <vaadin-button class='cm-button' theme='rounded primary'>Primary</vaadin-button>
+                <vaadin-button class='cm-button' theme='block primary large'>Large</vaadin-button>
+                <vaadin-button class='cm-button' theme='block primary'>Normal</vaadin-button>
+                <vaadin-button class='cm-button' theme='block primary small'>Normal</vaadin-button>
+            </div>
         </div>
     </section>
 
@@ -158,27 +209,28 @@
     </section>
 </cm-theme>
 
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/button/sp-button.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/action-button/sp-action-button.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/tooltip/sp-tooltip.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/popover/sp-popover.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/overlay/active-overlay.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/overlay/overlay-trigger.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/field-label/sp-field-label.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/textfield/sp-textfield.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/progress-circle/sp-progress-circle.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/toast/sp-toast.js?module" type="module"></script>
-
-
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/theme-light.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/scale-medium.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/src/themes.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/sp-theme.js?module" type="module"></script>
-
 <script src="https://unpkg.com/@vaadin/vaadin-icons@21.0.5/vaadin-icons.js?module" type="module"></script>
 <script src="https://unpkg.com/@vaadin/vaadin-icons@21.0.5/vaadin-iconset.js?module" type="module"></script>
 
-<script src="https://unpkg.com/@i2cinc/components@1.0.5/components/theming/default-theme.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/components/controls/buttons/buttons.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/components/theming/default-theme.js?module" type="module"></script>
+
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/button/sp-button.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/action-button/sp-action-button.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/tooltip/sp-tooltip.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/popover/sp-popover.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/overlay/active-overlay.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/overlay/overlay-trigger.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/field-label/sp-field-label.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/textfield/sp-textfield.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/progress-circle/sp-progress-circle.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/toast/sp-toast.js?module" type="module"></script>
+
+
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/theme/theme-light.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/theme/scale-medium.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/theme/src/themes.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.6/packages/theme/sp-theme.js?module" type="module"></script>
 
 <script>
     window.onload = function () {

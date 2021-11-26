@@ -94,7 +94,7 @@ const styles = css `
         position: relative !important;
         width: var(--i2c-icon-size-xs);
         height: var(--i2c-icon-size-xs);
-        color: var(--cm-global-color-gray-1500);
+        // color: var(--cm-global-color-gray-1500);
     }
 
     :host([variant='overBackground'].focus-visible):after,
