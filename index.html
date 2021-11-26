@@ -3,35 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+
 </head>
-<body style=" background: #3fa9e32e; ">
+<body>
 
-<cm-theme color='light' scale='medium'>
-<cm-button variant="cta" size="s">
-    Small
-</cm-button>
-<cm-button variant="cta" size="m">
-    Medium
-</cm-button>
-<cm-button variant="cta" size="l">
-    Large
-</cm-button>
+<cm-theme color='light' scale='large'>
+    <section class='row offset-1 tall'>
+        <div>
+            <cm-action-group>
+                <cm-action-button size="m">Do action</cm-action-button>
+                <cm-action-button size="m" selected>Selected</cm-action-button>
+                <cm-action-button size="m" disabled>Disabled</cm-action-button>
+            </cm-action-group>
+            <br>
+            <br>
+            <cm-button variant='cta' size='s' dir='ltr' focusable='' tabindex='0' role='button'>
+                Small
+            </cm-button>
+            <cm-button variant='cta' size='m' dir='ltr' focusable='' tabindex='0' role='button'>
+                Medium
+            </cm-button>
+            <cm-button variant='cta' size='l' dir='ltr' focusable='' tabindex='0' role='button'>
+                Large
+            </cm-button>
+            <br>
+            <br>
+            <cm-button variant='primary' size='l'>Large</cm-button>
+            <cm-button variant='primary' size='m'>Medium</cm-button>
+            <cm-button variant='primary' size='s' dir='ltr' focusable='' tabindex='0' role='button'>
+                Small
+            </cm-button>
+            <br>
+            <br>
+            <cm-button variant='secondary' size='s'>Small</cm-button>
+            <cm-button variant='secondary' size='m'>Medium</cm-button>
+            <cm-button variant='secondary' size='l'>Large</cm-button>
+            <br>
+            <br>
+            <cm-button variant='negative'>
+                <iron-icon icon="vaadin:mute"></iron-icon> Leave
+            </cm-button>
+            <cm-button variant='negative' theme='light'>Danger</cm-button>
+            <br>
+            <br>
+        </div>
+    </section>
 
     <br>
-    <br>
-    <br>
 
-    <overlay-trigger placement='top' offset='0'>
-        <cm-button dragable style='cursor:pointer;' class='cm-button'
-                       theme='light' slot='trigger'
-                       label='bottom test' dir='ltr' variant="negative"  focusable='' tabindex='0'
-                       role='button' size='m' aria-label='bottom test'>
+
+    <overlay-trigger offset='0' placement='top'>
+        <cm-button aria-label='bottom test' class='cm-button' dir='ltr'
+                   dragable focusable=''
+                   label='bottom test' role='button' size='m' slot='trigger' style='cursor:pointer;'
+                   tabindex='0' theme='light' variant="negative">
             Tooltip
         </cm-button>
 
 
-
-        <cm-tooltip size='large' slot='hover-content' dir='ltr'>
+        <cm-tooltip dir='ltr' size='large' slot='hover-content'>
             <strong style='margin:0'>Tooltip</strong>
             <div>Context Menu</div>
         </cm-tooltip>
@@ -41,14 +72,14 @@
     <br>
     <br>
 
-    <overlay-trigger id='trigger2' placement='left-start' offset='0' type='click'>
+    <overlay-trigger id='trigger2' offset='0' placement='left-start' type='click'>
 
-        <cm-button id='buttonT2' variant="cta" size="l" slot='trigger' class='cm-button'>
+        <cm-button class='cm-button' id='buttonT2' size="l" slot='trigger' variant="cta">
             Overlay
         </cm-button>
 
         <cm-popover dialog slot='click-content' style='padding: 2rem'>
-            <cm-toast open='' variant='info' theme='outline' dir='ltr' size='s' style='margin-bottom: 1rem'>
+            <cm-toast dir='ltr' open='' size='s' style='margin-bottom: 1rem' theme='outline' variant='info'>
                 Add Username and Password for login.
             </cm-toast>
             <div style='width: 100%; margin-bottom: 12px'>
@@ -56,8 +87,9 @@
                 <cm-textfield
                         id='userID'
                         placeholder='Enter UserId'
-                        value=''
                         required
+                        value=''
+                        style="width: 100%"
                 ></cm-textfield>
             </div>
             <cm-button class='cm-button' theme='block primary'>Login</cm-button>
@@ -66,34 +98,95 @@
         </cm-popover>
     </overlay-trigger>
 
+    <br>
+    <br>
+    <br>
+
+    <cm-progress-circle
+            label='A small representation of an unclear amount of work'
+            indeterminate
+            size='small'
+            progress='5'
+    ></cm-progress-circle>
+    <cm-progress-circle
+            label='A large representation of an unclear amount of work'
+            indeterminate
+            size='large'
+            progress='50'
+    ></cm-progress-circle>
+
+    <br>
+    <br>
+    <br>
+
+    <section class='offset-1 tall'>
+        <cm-toast open variant='info'>
+            This is negative information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='info' theme='outline'>
+            This is negative information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='negative'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='negative' theme='outline'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='positive'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='positive' theme='outline'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='warning'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open variant='warning' theme='outline'>
+            This is positive information that you should read, soon.
+        </cm-toast>
+        <br>
+        <cm-toast open>
+            This is positive information that you should read, soon.
+        </cm-toast>
+    </section>
 </cm-theme>
 
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/components//theming/default-theme.js" type="module" ></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/button/sp-button.js?module" type="module" ></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/tooltip/sp-tooltip.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/popover/sp-popover.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/overlay/active-overlay.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/overlay/overlay-trigger.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/field-label/sp-field-label.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/textfield/sp-textfield.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/button/sp-button.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/action-button/sp-action-button.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/tooltip/sp-tooltip.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/popover/sp-popover.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/overlay/active-overlay.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/overlay/overlay-trigger.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/field-label/sp-field-label.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/textfield/sp-textfield.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/progress-circle/sp-progress-circle.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/toast/sp-toast.js?module" type="module"></script>
 
 
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/theme-light.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/scale-medium.js?module" type="module"></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/src/themes.js?module" type="module" ></script>
-<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/sp-theme.js?module"  type="module" ></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/theme-light.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/scale-medium.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/src/themes.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/packages/theme/sp-theme.js?module" type="module"></script>
 
+<script src="https://unpkg.com/@vaadin/vaadin-icons@21.0.5/vaadin-icons.js?module" type="module"></script>
+<script src="https://unpkg.com/@vaadin/vaadin-icons@21.0.5/vaadin-iconset.js?module" type="module"></script>
 
-
-
-
+<script src="https://unpkg.com/@i2cinc/components@1.0.5/components/theming/default-theme.js?module" type="module"></script>
 
 <script>
-    window.onload = function() {
+    window.onload = function () {
         const style = document.createElement('custom-style');
-        style.innerHTML = `<style include="lumo-typography"></style>`;
+        style.innerHTML = `<style include="lumo"></style>`;
         document.head.appendChild(style);
     };
 </script>
+
 </body>
 </html>
