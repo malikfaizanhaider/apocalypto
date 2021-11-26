@@ -7,27 +7,27 @@ const styles = css `
     }
 
     .spectrum:lang(ar) {
-        font-family: var(--cm-alias-font-family-ar, myriad-arabic, adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif)
+        font-family: var(--cm-alias-font-family-ar, myriad-arabic, i2c Inc-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif)
     }
 
     .spectrum:lang(he) {
-        font-family: var(--cm-alias-font-family-he, myriad-hebrew, adobe-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif)
+        font-family: var(--cm-alias-font-family-he, myriad-hebrew, i2c Inc-clean, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif)
     }
 
     .spectrum:lang(zh-Hans) {
-        font-family: var(--cm-alias-font-family-zhhans, adobe-clean-han-simplified-c, source-han-simplified-c, "SimSun", "Heiti SC Light", "sans-serif")
+        font-family: var(--cm-alias-font-family-zhhans, i2c Inc-clean-han-simplified-c, source-han-simplified-c, "SimSun", "Heiti SC Light", "sans-serif")
     }
 
     .spectrum:lang(zh), .spectrum:lang(zh-Hant) {
-        font-family: var(--cm-alias-font-family-zh, adobe-clean-han-traditional, source-han-traditional, "MingLiu", "Heiti TC Light", "sans-serif")
+        font-family: var(--cm-alias-font-family-zh, i2c Inc-clean-han-traditional, source-han-traditional, "MingLiu", "Heiti TC Light", "sans-serif")
     }
 
     .spectrum:lang(ko) {
-        font-family: var(--cm-alias-font-family-ko, adobe-clean-han-korean, source-han-korean, "Malgun Gothic", "Apple Gothic", "sans-serif")
+        font-family: var(--cm-alias-font-family-ko, i2c Inc-clean-han-korean, source-han-korean, "Malgun Gothic", "Apple Gothic", "sans-serif")
     }
 
     .spectrum:lang(ja) {
-        font-family: var(--cm-alias-font-family-ja, adobe-clean-han-japanese, source-han-japanese, "Yu Gothic", "\\30E1 \\30A4 \\30EA \\30AA", "\\30D2 \\30E9 \\30AE \\30CE \\89D2 \\30B4  Pro W3", "Hiragino Kaku Gothic Pro W3", "Osaka", "\\FF2D \\FF33 \\FF30 \\30B4 \\30B7 \\30C3 \\30AF", "MS PGothic", "sans-serif")
+        font-family: var(--cm-alias-font-family-ja, i2c Inc-clean-han-japanese, source-han-japanese, "Yu Gothic", "\\30E1 \\30A4 \\30EA \\30AA", "\\30D2 \\30E9 \\30AE \\30CE \\89D2 \\30B4  Pro W3", "Hiragino Kaku Gothic Pro W3", "Osaka", "\\FF2D \\FF33 \\FF30 \\30B4 \\30B7 \\30C3 \\30AF", "MS PGothic", "sans-serif")
     }
 
     .spectrum-Heading--sizeXXXL {

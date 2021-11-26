@@ -3,19 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/2.6.0/custom-elements-es5-adapter.min.js'></script>
-    <script type="module">
-        // Take care of cases in which the browser runs this
-        // script before it has finished running
-        // webcomponents-loader.js (e.g. Firefox script execution order)
-        window.WebComponents = window.WebComponents || {
-            waitFor(cb){ addEventListener('WebComponentsReady', cb) }
-        }
-    </script>
 </head>
-<body>
+<body style=" background: #3fa9e32e; ">
 
-<script type="module" src="https://cdn.jsdelivr.net/npm/@i2cinc/components@1.0.1/packages/button/sp-button.js"></script>
+<cm-theme color='light' scale='medium'>
+<cm-button variant="cta" size="s">
+    Small
+</cm-button>
+<cm-button variant="cta" size="m">
+    Medium
+</cm-button>
+<cm-button variant="cta" size="l">
+    Large
+</cm-button>
 
+    <br>
+    <br>
+    <br>
+
+    <overlay-trigger placement='top' offset='0'>
+        <cm-button dragable style='cursor:pointer;' class='cm-button'
+                       theme='light' slot='trigger'
+                       label='bottom test' dir='ltr' variant="negative"  focusable='' tabindex='0'
+                       role='button' size='m' aria-label='bottom test'>
+            Tooltip
+        </cm-button>
+
+
+
+        <cm-tooltip size='large' slot='hover-content' dir='ltr'>
+            <strong style='margin:0'>Tooltip</strong>
+            <div>Context Menu</div>
+        </cm-tooltip>
+    </overlay-trigger>
+
+    <br>
+    <br>
+    <br>
+
+    <overlay-trigger id='trigger2' placement='left-start' offset='0' type='click'>
+
+        <cm-button id='buttonT2' variant="cta" size="l" slot='trigger' class='cm-button'>
+            Overlay
+        </cm-button>
+
+        <cm-popover dialog slot='click-content' style='padding: 2rem'>
+            <cm-toast open='' variant='info' theme='outline' dir='ltr' size='s' style='margin-bottom: 1rem'>
+                Add Username and Password for login.
+            </cm-toast>
+            <div style='width: 100%; margin-bottom: 12px'>
+                <cm-field-label for='userID'>User ID</cm-field-label>
+                <cm-textfield
+                        id='userID'
+                        placeholder='Enter UserId'
+                        value=''
+                        required
+                ></cm-textfield>
+            </div>
+            <cm-button class='cm-button' theme='block primary'>Login</cm-button>
+            <br>
+            <cm-button class='cm-button' theme='tertiary block'>Cancel</cm-button>
+        </cm-popover>
+    </overlay-trigger>
+
+</cm-theme>
+
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/components//theming/default-theme.js" type="module" ></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/button/sp-button.js?module" type="module" ></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/tooltip/sp-tooltip.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/popover/sp-popover.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/overlay/active-overlay.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/overlay/overlay-trigger.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/field-label/sp-field-label.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/textfield/sp-textfield.js?module" type="module"></script>
+
+
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/theme-light.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/scale-medium.js?module" type="module"></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/src/themes.js?module" type="module" ></script>
+<script src="https://unpkg.com/@i2cinc/components@1.0.4/packages/theme/sp-theme.js?module"  type="module" ></script>
+
+
+
+
+
+
+<script>
+    window.onload = function() {
+        const style = document.createElement('custom-style');
+        style.innerHTML = `<style include="lumo-typography"></style>`;
+        document.head.appendChild(style);
+    };
+</script>
 </body>
 </html>

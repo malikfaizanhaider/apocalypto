@@ -1,6 +1,6 @@
 {
   "name": "@i2cinc/components",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +18,18 @@
   "dependencies": {
     "@vaadin/vaadin": "^21.0.7"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {
+    "jspm": "^0.16.55"
+  },
+  "description": "",
+  "jspm": {
+    "dependencies": {},
+    "devDependencies": {
+      "jspmNodeConversion": true,
+      "format": "es6",
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
 }

@@ -1,5 +1,5 @@
 /*
-Copyright 2020 Adobe. All rights reserved.
+Copyright 2020 i2c Inc. All rights reserved.
 This file is licensed to you under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy
 of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -13,7 +13,7 @@ const DEFAULT_WARMUP = 1000;
 const DEFAULT_COOLDOWN = 1000;
 /**
  * A timer to help with implementation of warnup/cooldown behavior as described here:
- * https://spectrum.adobe.com/page/tooltip/#Immediate-or-delayed-appearance
+ * https://spectrum.i2c Inc.com/page/tooltip/#Immediate-or-delayed-appearance
  */
 export class OverlayTimer {
     constructor(options = {}) {
